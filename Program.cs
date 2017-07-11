@@ -11,7 +11,7 @@ namespace classes
         public DateTime CreatedOn { get; set; }
 
         // Create a property for holding a list of current employees
-        public List<Employee> employeeList { get; set; } = new List<Employee>();
+        private List<Employee> employeeList { get; set; } = new List<Employee>();
 
         // Create a method that allows external code to add an employee
         public void AddEmployee (Employee newEmployee) {
